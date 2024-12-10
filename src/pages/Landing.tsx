@@ -12,8 +12,6 @@ import NumberTicker from "@/components/ui/number-ticker";
 import Particles from "@/components/ui/particles";
 
 import { Footer } from "@/components/Footer";
-import BoxReveal from "@/components/ui/box-reveal";
-
 
 export function Landing() {
   return (
@@ -82,64 +80,76 @@ export function Landing() {
                   className="whitespace-pre-wrap text-8xl font-extrabold tracking-tighter text-gray-200"
                 />
                 <p className="text-8xl font-extrabold text-gray-200">+</p>
-              <div>
-                <BlurredInComponent word="What Is ACM?"/>
-              </div>
-              <div className="w-full flex items-center justify-center mt-8">
-                <div className="text-gray-200 flex items-center max-w-3xl text-justify" >
-                  <div className="size-full max-w-full items-center justify-center overflow-hidden pt-8">
-                   
+                <div>
+                  <BlurredInComponent word="What Is ACM?" />
+                </div>
+                <div className="w-full flex items-center justify-center mt-8">
+                  <div className="text-gray-200 flex items-center max-w-3xl text-justify">
+                    <div className="size-full max-w-full items-center justify-center overflow-hidden pt-8">
                       <p className="text-2xl">
-                        The <strong>Association for Computing Machinery (ACM)</strong> is a global organization dedicated to advancing computing as a science and profession. With over 100,000 members worldwide, ACM brings together educators, researchers, and professionals to address the challenges and opportunities in computing. The Navrachana University ACM Chapter joins this vast network, creating a platform for students and faculty to connect, learn, and contribute to the ever-evolving field of technology.
+                        The{" "}
+                        <strong>
+                          Association for Computing Machinery (ACM)
+                        </strong>{" "}
+                        is a global organization dedicated to advancing
+                        computing as a science and profession. With over 100,000
+                        members worldwide, ACM brings together educators,
+                        researchers, and professionals to address the challenges
+                        and opportunities in computing. The Navrachana
+                        University ACM Chapter joins this vast network, creating
+                        a platform for students and faculty to connect, learn,
+                        and contribute to the ever-evolving field of technology.
                       </p>
-                      
+                    </div>
                   </div>
-
-                  
+                  <div className="text-white flex flex-col gap-5 w-[500px] items-center justify-center mx-0 px-0">
+                    <div className="flex gap-5">
+                      <NumberTicker
+                        value={190}
+                        className="whitespace-pre-wrap text-8xl font-extrabold tracking-tighter text-gray-200"
+                      />
+                      <p className="text-8xl font-extrabold text-gray-200">+</p>
+                    </div>
+                    <div className="text-3xl font-extrabold tracking-tighter text-gray-200">
+                      COUNTRIES
+                    </div>
+                  </div>
                 </div>
-                <div className="text-white flex flex-col gap-5 w-[500px] items-center justify-center mx-0 px-0">
-                  <div className="flex gap-5">
-                    <NumberTicker value={190} className="whitespace-pre-wrap text-8xl font-extrabold tracking-tighter text-gray-200"/>
-                    <p className="text-8xl font-extrabold text-gray-200">+</p>
-
-                  </div>
-                  <div className="text-3xl font-extrabold tracking-tighter text-gray-200">COUNTRIES</div>
+                <div className="text-3xl font-extrabold tracking-tighter text-gray-200">
+                  COUNTRIES
                 </div>
               </div>
-              <div className="text-3xl font-extrabold tracking-tighter text-gray-200">
-                COUNTRIES
-              </div>
             </div>
-          </div>
-          <div className="h-28"></div>
+            <div className="h-28"></div>
 
-          <div className="w-full flex items-center justify-center">
-            <TypingAnimation
-              text="Our Vision & Mission"
-              className="text-white font-bold text-6xl "
-            />
-          </div>
-          <div className="w-full flex items-center justify-center mt-8">
-            <div className="text-white flex w-[500px] items-center justify-center mx-0 px-0">
-              <AnimatedBeamDemo />
+            <div className="w-full flex items-center justify-center">
+              <TypingAnimation
+                text="Our Vision & Mission"
+                className="text-white font-bold text-6xl "
+              />
             </div>
-            <div className="text-white flex items-center max-w-3xl">
-              <p className="pl-9 text-2xl text-justify text-gray-300">
-                As part of the Navrachana University ACM Chapter, students can
-                access opportunities for academic, professional, and personal
-                growth. Aligned with ACM's global mission, the chapter offers
-                resources like the Digital Library, technical workshops,
-                hackathons, and networking events. With a focus on technical
-                excellence, lifelong learning, and inclusivity, we aim to
-                empower students to become leaders in computing and drive
-                positive change through technology.
-              </p>
+            <div className="w-full flex items-center justify-center mt-8">
+              <div className="text-white flex w-[500px] items-center justify-center mx-0 px-0">
+                <AnimatedBeamDemo />
+              </div>
+              <div className="text-white flex items-center max-w-3xl">
+                <p className="pl-9 text-2xl text-justify text-gray-300">
+                  As part of the Navrachana University ACM Chapter, students can
+                  access opportunities for academic, professional, and personal
+                  growth. Aligned with ACM's global mission, the chapter offers
+                  resources like the Digital Library, technical workshops,
+                  hackathons, and networking events. With a focus on technical
+                  excellence, lifelong learning, and inclusivity, we aim to
+                  empower students to become leaders in computing and drive
+                  positive change through technology.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
