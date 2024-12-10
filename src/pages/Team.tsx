@@ -25,9 +25,7 @@ export function Team(){
                 <MemberInfo name="Amaan Surti" position="Co Chair" linkedInProfileUrl="https://www.linkedin.com/in/amaan-surti-14b072206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" TwitterProfileUrl="https://x.com/Amaan7399" imageUrl={Amaan}/>
                 <MemberInfo name="Ray" position="Web Master" TwitterProfileUrl="https://x.com/yatharthpnwr" imageUrl={Ray}/>
                 <MemberInfo name="Yatharth Singh Panwar" position="Web Master" linkedInProfileUrl="https://www.linkedin.com/in/yatharth-singh-panwar-153058288/" TwitterProfileUrl="https://x.com/yatharthpnwr" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToonwNT4zbwCyq-k-qAzXexPn6URz3gT4BxQ&s"/>
-
-            </div>
-
-        </div>
-    )
+      <Footer />
+    </div>
+  );
 }
