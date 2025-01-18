@@ -11,6 +11,7 @@ import NumberTicker from "@/components/ui/number-ticker";
 import Particles from "@/components/ui/particles";
 import { Footer } from "@/components/Footer";
 import logo from "@/assets/LOGOFINAL.png";
+import BenefitsCard from "@/components/BenefitsCard";
 
 export function Landing() {
   return (
@@ -29,12 +30,7 @@ export function Landing() {
       </div>
       <div className="z-50 m-0 flex items-center justify-between h-24 bg-black bg-opacity-60 mb-10">
         <div className="logo bg-black">
-          <img 
-            className="rounded-2xl"
-            src={logo}
-            height={400}
-            width={500}
-          />
+          <img className="rounded-2xl" src={logo} height={400} width={500} />
         </div>
         <Navbar />
       </div>
@@ -64,9 +60,50 @@ export function Landing() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col	items-center justify-center">
           <div className="w-full absolute text-white">
             <Particles color="#b91c1c" />
+          </div>
+          <div className="">
+            <div className="text-3xl text-center font-bold mb-4 text-white">
+              BENIFITS OFFERED BY NUV ACM
+            </div>
+            <div className="flex justify-center gap-12  mb-5 flex-wrap">
+              <BenefitsCard
+                title="Career Advancement"
+                desc="Subscribe to the ACM Digital Library for full-text articles, bibliographic data, research papers, and tutorials on cutting-edge technologies."
+                img="/assets/LandingPageAssets/CareerAdvancement.svg"
+              />
+              <BenefitsCard
+                title="Leadership"
+                desc="Opportunities for students to take up leadership roles within
+                  the chapter and showcase their contributions to a global
+                  audience."
+                img="/assets/LandingPageAssets/Leadership.svg"
+              />
+
+              <BenefitsCard
+                title="Networking Opportunities"
+                desc="A chance to connect with ACM’s global community of
+                  professionals, academicians, and students through conferences,
+                  webinars, and mentorship programs."
+                img="/assets/LandingPageAssets/Networking.svg"
+              />
+              <BenefitsCard
+                title="Research Opportunities"
+                desc="ACM offers research opportunities, connecting students to
+                  advancements in computing through publications, conferences,
+                  and special interest groups."
+                img="/assets/LandingPageAssets/ProffesionalDevelopment.svg"
+              />
+              <BenefitsCard
+                title="Skill Advancement"
+                desc="Hands-on learning experiences through workshops, hackathons,
+                  coding competitions, and seminars that cover various domains
+                  of computing and technology."
+                img="/assets/LandingPageAssets/Skills.svg"
+              />
+            </div>
           </div>
           <div>
             <BlurredInComponent word="What Is ACM?" />
@@ -111,9 +148,21 @@ export function Landing() {
             </div>
             <div className="text-white flex items-center max-w-3xl">
               <p className="pl-9 text-xl text-justify text-gray-300">
-              The ACM Student Chapter envisions fostering an inclusive, innovative, and collaborative environment where students can excel in the field of computing and technology. Our chapter serves as a bridge between academic learning and professional excellence, empowering students to explore emerging trends, contribute to impactful projects, and develop problem-solving skills essential for the challenges of tomorrow.
-              Through workshops, hackathons, guest lectures, and collaborative research opportunities, we aim to inspire curiosity and nurture talent. By cultivating a vibrant community, we strive to promote diversity, encourage interdisciplinary collaboration, and ignite a passion for lifelong learning in the ever-evolving landscape of computing.
-              Together, we are building a foundation where the students of today become the thought leaders, innovators, and change-makers of the future.
+                The ACM Student Chapter envisions fostering an inclusive,
+                innovative, and collaborative environment where students can
+                excel in the field of computing and technology. Our chapter
+                serves as a bridge between academic learning and professional
+                excellence, empowering students to explore emerging trends,
+                contribute to impactful projects, and develop problem-solving
+                skills essential for the challenges of tomorrow. Through
+                workshops, hackathons, guest lectures, and collaborative
+                research opportunities, we aim to inspire curiosity and nurture
+                talent. By cultivating a vibrant community, we strive to promote
+                diversity, encourage interdisciplinary collaboration, and ignite
+                a passion for lifelong learning in the ever-evolving landscape
+                of computing. Together, we are building a foundation where the
+                students of today become the thought leaders, innovators, and
+                change-makers of the future.
               </p>
             </div>
           </div>
