@@ -66,7 +66,7 @@ export function Landing() {
           </div>
           <div className="">
             <div className="text-3xl text-center font-bold mb-4 text-white">
-              BENIFITS OFFERED BY NUV ACM
+              BENEFITS OFFERED BY NUV ACM
             </div>
             <div className="flex justify-center gap-12  mb-5 flex-wrap">
               <BenefitsCard
