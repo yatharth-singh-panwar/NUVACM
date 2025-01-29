@@ -36,24 +36,37 @@ export function Landing() {
       </div>
       <div>
         <div className="flex w-full items-center justify-center pb-20">
-          <div className="-z-20 w-full top-0  min-h-64 items-center justify-center ">
-
+          <div className="-z-20 w-full h-screen top-0 min-h-64 items-center justify-center ">
             <WordPullUp
               words="NUV ACM"
               className="text-center text-red-600 font-mega-bold text-9xl p-2 font-aleo"
             />
             <SparklesText
               className="z-50 font-bold w-full absolute top-48 text-center text-transparent text-8xl p-2 font-aleo"
-              text="NUV x ACM"
+              text="NUV ACM"
             />
             <div className="text-center text-black font-extrabold text-4xl pb-0 font-aleo w-3/4">
               {/* <VelocityScroll
                 text="Student Chapter"
                 default_velocity={1}
-                className="text-white"
+                className=""
               /> */}
               <div className="text-black text-center w-lvw text-6xl">
                 Student Chapter
+              </div>
+              <div className="text-black text-center w-lvw px-[10vw] mt-10 text-xl">
+                <span className="text-red-600">Navrachana University</span>,
+                established in July 2009 in Vadodara, Gujarat, is a premier
+                private institution accredited with an 'A' grade by NAAC. It
+                offers a holistic, interdisciplinary curriculum emphasizing
+                real-world application. The university houses five schools:
+                Science, Engineering & Technology, Business & Law, Environmental
+                Design & Architecture, and Liberal Studies & Education, on a
+                modern campus. The Chapter is dedicated to fostering knowledge
+                and interest in modern computing—encompassing its science,
+                design, development, and applications—while promoting
+                communication among enthusiasts, primarily serving students at
+                Navrachana University and reaching out to the broader community.
               </div>
             </div>
             {/* <div className="z-50 items-center w-full max max-h-[500px] overflow-hidden">
@@ -66,8 +79,8 @@ export function Landing() {
             <Particles color="#b91c1c" />
           </div>
           <div className="">
-            <div className="text-3xl text-center font-bold mb-10 text-white ">
-              <BlurredInComponent word="Student Membership Benefits" />
+            <div className="text-3xl text-center font-bold mb-10  ">
+              <BlurredInComponent word="Why to Choose ACM?" />
             </div>
             <div className="flex justify-center gap-12  mb-5 flex-wrap">
               <BenefitsCard
@@ -110,7 +123,7 @@ export function Landing() {
             <BlurredInComponent word="What is ACM?" />
           </div>
           <div className="w-full flex items-center justify-center mt-8">
-            <div className="text-gray-200 flex items-center max-w-3xl text-justify">
+            <div className=" flex items-center max-w-3xl text-justify">
               <div className="size-full max-w-full items-center justify-center overflow-hidden pt-8">
                 <p className="text-2xl">
                   The <strong>Association for Computing Machinery (ACM)</strong>{" "}
@@ -125,15 +138,15 @@ export function Landing() {
                 </p>
               </div>
             </div>
-            <div className="text-white flex flex-col gap-5 w-[500px] items-center justify-center mx-0 px-0">
+            <div className=" flex flex-col gap-5 w-[500px] items-center justify-center mx-0 px-0">
               <div className="flex gap-5">
                 <NumberTicker
                   value={190}
-                  className="whitespace-pre-wrap text-8xl font-extrabold tracking-tighter text-gray-200"
+                  className="whitespace-pre-wrap text-8xl font-extrabold tracking-tighter "
                 />
-                <p className="text-8xl font-extrabold text-gray-200">+</p>
+                <p className="text-8xl font-extrabold ">+</p>
               </div>
-              <div className="text-3xl font-extrabold tracking-tighter text-gray-200">
+              <div className="text-3xl font-extrabold tracking-tighter ">
                 COUNTRIES
               </div>
             </div>
@@ -144,11 +157,11 @@ export function Landing() {
             <BlurredInComponent word="Our Vision & Mission" />
           </div>
           <div className="w-full flex items-center justify-center mt-8">
-            <div className="text-white flex w-[500px] items-center justify-center mx-0 px-0">
+            <div className=" flex w-[500px] items-center justify-center mx-0 px-0">
               <AnimatedBeamDemo />
             </div>
-            <div className="text-white flex items-center max-w-3xl">
-              <p className="pl-9 text-xl text-justify text-gray-300">
+            <div className=" flex items-center max-w-3xl">
+              <p className="pl-9 text-xl text-justify ">
                 The ACM Student Chapter envisions fostering an inclusive,
                 innovative, and collaborative environment where students can
                 excel in the field of computing and technology. Our chapter
