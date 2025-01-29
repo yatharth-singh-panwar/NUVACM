@@ -34,44 +34,41 @@ export function Landing() {
         </div>
         <Navbar />
       </div>
-      <div>
-        <div className="flex w-full items-center justify-center pb-20">
-          <div className="-z-20 w-full h-screen top-0 min-h-64 items-center justify-center ">
-            <WordPullUp
-              words="NUV ACM"
-              className="text-center text-red-600 font-mega-bold text-9xl p-2 font-aleo"
-            />
-            <SparklesText
-              className="z-50 font-bold w-full absolute top-48 text-center text-transparent text-8xl p-2 font-aleo"
-              text="NUV ACM"
-            />
-            <div className="text-center text-black font-extrabold text-4xl pb-0 font-aleo w-3/4">
-              {/* <VelocityScroll
-                text="Student Chapter"
-                default_velocity={1}
-                className=""
-              /> */}
-              <div className="text-black text-center w-lvw text-6xl">
-                Student Chapter
-              </div>
-              <div className="text-black text-center w-lvw px-[10vw] mt-10 text-xl">
-                <span className="text-red-600">Navrachana University</span>,
-                established in July 2009 in Vadodara, Gujarat, is a premier
-                private institution accredited with an 'A' grade by NAAC. It
-                offers a holistic, interdisciplinary curriculum emphasizing
-                real-world application. The university houses five schools:
-                Science, Engineering & Technology, Business & Law, Environmental
-                Design & Architecture, and Liberal Studies & Education, on a
-                modern campus. The Chapter is dedicated to fostering knowledge
-                and interest in modern computing—encompassing its science,
-                design, development, and applications—while promoting
-                communication among enthusiasts, primarily serving students at
-                Navrachana University and reaching out to the broader community.
-              </div>
+      {/* Main Content */}
+      <div className="flex flex-col min-h-[calc(100vh-6rem)] justify-center items-center">
+        <div className="relative w-full text-center mb-20">
+          <WordPullUp
+            words="NUV ACM"
+            className="text-red-600 font-mega-bold text-9xl p-2 font-aleo"
+          />
+          <SparklesText
+            className="z-50 font-bold absolute left-1/2 transform -translate-x-1/2 text-transparent text-8xl p-2 font-aleo"
+            text="NUV ACM"
+          />
+
+          {/* Student Chapter and Description */}
+          <div className="max-w-6xl mx-auto px-4 mt-16">
+            <div className="text-black text-6xl font-extrabold mb-10 font-aleo">
+              Student Chapter
             </div>
-            {/* <div className="z-50 items-center w-full max max-h-[500px] overflow-hidden">
-              <Globe />
-            </div> */}
+            <div className="font-aleo font-bold text-xl leading-relaxed mx-auto mb-28 max-w-4xl">
+              <a href="https://nuv.ac.in/">
+                <span className="text-red-600 underline">
+                  Navrachana University
+                </span>
+              </a>
+              , established in July 2009 in Vadodara, Gujarat, is a premier
+              private institution accredited with an 'A' grade by NAAC. It
+              offers a holistic, interdisciplinary curriculum emphasizing
+              real-world application. The university houses five schools:
+              Science, Engineering & Technology, Business & Law, Environmental
+              Design & Architecture, and Liberal Studies & Education, on a
+              modern campus. The Chapter is dedicated to fostering knowledge and
+              interest in modern computing—encompassing its science, design,
+              development, and applications—while promoting communication among
+              enthusiasts, primarily serving students at Navrachana University
+              and reaching out to the broader community.
+            </div>
           </div>
         </div>
         <div className="flex flex-col	items-center justify-center">
@@ -119,14 +116,25 @@ export function Landing() {
               />
             </div>
           </div>
-          <div>
+          <div className="mt-16">
             <BlurredInComponent word="What is ACM?" />
           </div>
           <div className="w-full flex items-center justify-center mt-8">
             <div className=" flex items-center max-w-3xl text-justify">
-              <div className="size-full max-w-full items-center justify-center overflow-hidden pt-8">
+              <div className="font-aleo size-full max-w-full items-center justify-center overflow-hidden pt-8">
                 <p className="text-2xl">
-                  The <strong>Association for Computing Machinery (ACM)</strong>{" "}
+                  The{" "}
+                  <strong>
+                    Association for Computing Machinery (
+                    <a
+                      className="underline cursor-pointer"
+                      href="https://www.acm.org/"
+                      target="blank"
+                    >
+                      ACM
+                    </a>
+                    )
+                  </strong>{" "}
                   is a global organization dedicated to advancing computing as a
                   science and profession. With over 100,000 members worldwide,
                   ACM brings together educators, researchers, and professionals
@@ -138,15 +146,18 @@ export function Landing() {
                 </p>
               </div>
             </div>
-            <div className=" flex flex-col gap-5 w-[500px] items-center justify-center mx-0 px-0">
+            <div className="text-black flex flex-col w-[500px] items-center justify-center mx-0 px-0 ">
+              <div className="relative w-80 h-80">
+                <Globe className="absolute w-full h-full" />
+              </div>
               <div className="flex gap-5">
                 <NumberTicker
                   value={190}
-                  className="whitespace-pre-wrap text-8xl font-extrabold tracking-tighter "
+                  className="whitespace-pre-wrap text-5xl font-extrabold tracking-tighter text-black"
                 />
-                <p className="text-8xl font-extrabold ">+</p>
+                <p className="text-5xl font-extrabold text-black">+</p>
               </div>
-              <div className="text-3xl font-extrabold tracking-tighter ">
+              <div className="text-xl font-extrabold tracking-tighter text-black">
                 COUNTRIES
               </div>
             </div>
