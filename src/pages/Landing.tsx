@@ -66,8 +66,8 @@ export function Landing() {
             <Particles color="#b91c1c" />
           </div>
           <div className="">
-            <div className="text-3xl text-center font-bold mb-10  ">
-            <BlurredInComponent word="Student Benefits" />
+            <div className="text-3xl text-center font-bold mb-10 text-white ">
+              <BlurredInComponent word="Student Membership Benefits" />
             </div>
             <div className="flex justify-center gap-12  mb-5 flex-wrap">
               <BenefitsCard
@@ -107,7 +107,7 @@ export function Landing() {
             </div>
           </div>
           <div>
-            <BlurredInComponent word="What Is ACM?" />
+            <BlurredInComponent word="What is ACM?" />
           </div>
           <div className="w-full flex items-center justify-center mt-8">
             <div className="text-gray-200 flex items-center max-w-3xl text-justify">
