@@ -25,7 +25,7 @@ export function Landing() {
           width={100}
           height={100}
           numSquares={5}
-          className="bg-[#151E3D]"
+          className="bg-[#ffffff]"
         />
       </div>
       <div className="z-50 m-0 flex items-center justify-between h-24 bg-black mb-10">
@@ -37,9 +37,7 @@ export function Landing() {
       <div>
         <div className="flex w-full items-center justify-center pb-20">
           <div className="-z-20 w-full top-0  min-h-64 items-center justify-center ">
-            <div className="text-center text-white font-extrabold text-5xl font-aleo">
-              Welcome To
-            </div>
+
             <WordPullUp
               words="NUV ACM"
               className="text-center text-red-600 font-mega-bold text-9xl p-2 font-aleo"
@@ -48,20 +46,23 @@ export function Landing() {
               className="z-50 font-bold w-full absolute top-48 text-center text-transparent text-8xl p-2 font-aleo"
               text="NUV x ACM"
             />
-            <div className="ml-[300px] text-center text-white font-extrabold text-4xl pb-0 font-aleo w-3/4">
-              <VelocityScroll
+            <div className="text-center text-black font-extrabold text-4xl pb-0 font-aleo w-3/4">
+              {/* <VelocityScroll
                 text="Student Chapter"
                 default_velocity={1}
                 className="text-white"
-              />
+              /> */}
+              <div className="text-black text-center w-lvw text-6xl">
+                Student Chapter
+              </div>
             </div>
-            <div className="z-50 items-center w-full max max-h-[500px] overflow-hidden">
+            {/* <div className="z-50 items-center w-full max max-h-[500px] overflow-hidden">
               <Globe />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col	items-center justify-center">
-          <div className="w-full absolute text-white">
+          <div className="w-full absolute">
             <Particles color="#b91c1c" />
           </div>
           <div className="">

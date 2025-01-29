@@ -31,7 +31,7 @@ const BlurredInComponent = (props: wordToDisplay) => {
   const isVisible = useOnScreen(ref);
 
   return (
-    <div ref={ref} className={`h-16 text-white ${props.size ? `text-[${props.size}px]` : ""} ${!props.size ? "" : ""}`}>
+    <div ref={ref} className={`h-1-6 text-black ${props.size ? `text-[${props.size}px]` : ""} ${!props.size ? "" : ""}`}>
       {isVisible && <BlurIn word={props.word}/>}
     </div>
   );
