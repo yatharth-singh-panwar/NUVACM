@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import { AnimatedBeamDemo } from "@/components/About";
 import WordPullUp from "@/components/ui/word-pull-up";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
-import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import NumberTicker from "@/components/ui/number-ticker";
 import Particles from "@/components/ui/particles";
 import { Footer } from "@/components/Footer";

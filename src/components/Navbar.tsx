@@ -17,7 +17,7 @@ function Navbar() {
             <div>Home</div>
           </a>
           <a
-            href="/Team"
+            href="/"
             className="w-full hover:text-red-600 ease-out duration-200 cursor-pointer flex flex-col justify-center items-center gap-2 text-xs"
           >
             <div>
@@ -26,7 +26,7 @@ function Navbar() {
             <div>The Team</div>
           </a>
           <a
-            href="/Events"
+            href="/"
             className="w-full hover:text-red-600 ease-out duration-200 cursor-pointer flex flex-col justify-center items-center gap-2 text-xs"
           >
             <div>

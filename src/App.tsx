@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="Team" element={<Team />} />
-          <Route path="Events" element={<Events />} />
+          {/* <Route path="Team" element={<Team />} />
+          <Route path="Events" element={<Events />} /> */}
           <Route path="admin/login" element={<Login />} />
           <Route path="admin/dashboard" element={<Dashboard />} />
           <Route path="admin" element={<Navigate to="login" />} />
