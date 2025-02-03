@@ -9,7 +9,7 @@ import Amaan from "@/icons/Amaan-removebg-preview.png";
 import Jaideep from "@/icons/JaideepRaulji.png";
 import ashish from "@/icons/AshishJani.png";
 import { Footer } from "@/components/Footer";
-import logo from "@/assets/LOGOFINAL.png";
+import logo from "@/assets/Frame 4.png";
 import yatharth from "@/icons/yatharthFinal2.png";
 export function Team() {
   return (
@@ -29,7 +29,7 @@ export function Team() {
             className="rounded-2xl"
             src={logo}
             height={400}
-            width={500}
+            width={470}
           />
         </div>
         <Navbar />
@@ -37,7 +37,7 @@ export function Team() {
       <div className="w-full flex justify-center text-white p-10">
         <WordFadeIn
           words="MEET THE BRAINS"
-          className="text-white"
+          className="text-black"
           delay={0.7}
         />
       </div>

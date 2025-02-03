@@ -10,7 +10,7 @@ import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import NumberTicker from "@/components/ui/number-ticker";
 import Particles from "@/components/ui/particles";
 import { Footer } from "@/components/Footer";
-import logo from "@/assets/LOGOFINAL.png";
+import logo from "@/assets/Frame 4.png";
 import BenefitsCard from "@/components/BenefitsCard";
 
 export function Landing() {
@@ -30,7 +30,7 @@ export function Landing() {
       </div>
       <div className="z-50 m-0 flex items-center justify-between h-24 bg-black mb-10">
         <div className="logo bg-black">
-          <img className="rounded-2xl" src={logo} height={400} width={500} />
+          <img className="rounded-2xl" src={logo} height={400} width={470} />
         </div>
         <Navbar />
       </div>
@@ -42,7 +42,7 @@ export function Landing() {
             className="text-red-600 font-mega-bold text-9xl p-2 font-aleo"
           />
           <SparklesText
-            className="z-50 font-bold absolute left-1/2 transform -translate-x-1/2 text-transparent text-8xl p-2 font-aleo"
+            className="z-30 font-bold absolute left-1/2 transform -translate-x-1/2 text-transparent text-8xl p-2 font-aleo"
             text="NUV ACM"
           />
 

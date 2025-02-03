@@ -6,10 +6,9 @@ import { Github, Linkedin } from "lucide-react";
 export function Footer() {
   return (
     <div>
-      <hr className="mt-5 border-dashed border-red-900" />
+      <hr className="mt-5 border-dashed border-red-600" />
       <div className="relative footer text-white p-10 flex flex-col items-center font-aleo">
-        {/* // TODO: Add logo here  */}
-        {/* <BlurIn className="logo text-4xl" word="NUV ACM" /> */}
+        <BlurredInComponent word="NUV ACM"/>
         <FlickeringGrid
           className="z-0 absolute inset-0 size-full bg-black"
           squareSize={4}
@@ -18,7 +17,7 @@ export function Footer() {
           maxOpacity={0.5}
           flickerChance={0.1}
         />
-        <BlurredInComponent word="NUV ACM" />
+   
         <div className="links z-50 flex mt-2 gap-4">
           <a href="#">Home</a>
           <a href="#">About</a>
